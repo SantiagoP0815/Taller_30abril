@@ -1,0 +1,466 @@
+#Ejercio1
+a=input("ingrese el nombre ")
+b=input("ingrese el calificativo ")
+print(a,b)
+
+#Ejercicio2
+c=int(input("ingrese un número "))
+print("el cuadrado es",c*c)
+
+#Ejercicio3
+d=int(input("ingrese un número "))
+e=int(input("ingrese el otro número "))
+print("la suma de los números es",d+e)
+
+#Ejercicio4
+f=int(input("ingrese un número "))
+g=int(input("ingrese el otro número "))
+print("la suma de los números es",f+g)
+print("la resta de los números es",f-g)
+print("la multiplicación de los números es",f*g)
+print("la división de los números es",f/g)
+print("el residuo de los números es",f%g)
+
+#Ejercicio5
+h=float(input("ingrese el numero "))
+i=int(h)
+print("la parte entera del número es",i)
+print("la parte decimal del número es",h-i)
+
+#Ejercicio6
+o=float(input("ingrese el valor del producto "))
+p=o/1.19
+print("el valor del producto neto es",p)
+print("el valor del iva es ",o-p)
+print("el valor del producto con iva es",o)
+
+#Ejercicio7
+q=float(input("ingrese el radio del circulo "))
+print("el área del circulo es",3.141592*(q**2))
+print("el perimetro del circulo es",2*3.141592*q)
+
+#Ejercicio8
+r=float(input("ingrese la medida de uno de sus lados "))
+s=float(input("ingrese el apotema del hexágono "))
+t=r*6
+print("el área del hexágono es ",(t*s)/2)
+
+#Ejercicio9
+u=float(input("ingrese el primer número "))
+v=float(input("ingrese el segundo número "))
+w=float(input("ingrese el tercer número "))
+print("el promedion de los números es",(u+v+w)/3)
+
+#Ejercicio10
+x=int(input("ingrese el valor de A "))
+y=int(input("ingrese el valor de B "))
+print("el valor de A es:",x,"y el valor de B es:",y)
+print("al intercambiar variables el valor de A es:",y,"y el valor de B es:",x)
+
+#Ejercicio11
+z=float(input("ingrese la altura de caida del objeto en metros "))
+aa=(2*z)/9.8
+import math 
+print("el tiempo que tardo el objeto al caer fue",math.sqrt(aa),"segundos")
+
+#Ejercicio12
+ab=float(input("ingrese la velocidad inicial del objeto en metros por segundo "))
+ac=float(input("ingrese la aceleracion del objeto "))
+ad=float(input("ingrese el tiempo del objeto en segundos "))
+print("la distancia recorrida por el objeto es ",ab*ad+0.5*ac*ad**2)
+
+#Ejercicio13
+ae=float(input("ingrese la velocidad inicial del objeto en metros por segundo "))
+af=float(input("ingrese la aceleracion del objeto "))
+ag=float(input("ingrese el tiempo del objeto en segundos "))
+print("la velocidad final del objeto es ",ae+af*ag,"m/s")
+
+#Ejercicio14
+pregunta = str(input("¿Quieres hallar la velocidad final de un objeto? si o no = "))
+if pregunta == "si":
+    velocidadInicial = float(input("Ingrese el valor de la velocidad inicial = "))
+    aceleracion = float(input("Ingrese el valor de la aceleración = "))
+    tiempo = float(input("Ingrese el valor del tiempo en segundos = "))
+    #PROCESOS
+    velocidadFinal = velocidadInicial + (aceleracion * tiempo)
+    print("La velocidad final del objeto es = ", velocidadFinal)
+    print("¡El programa se ha terminado de ejecutar con éxito!")
+else:
+    print("Finish!!")
+
+#Ejercicio15
+ah=float(input("ingrese el valor de x1 "))
+ai=float(input("ingrese el valor de y1 "))
+aj=float(input("ingrese el valor de x2 "))
+ak=float(input("ingrese el valor de y2 "))
+import math 
+al=(aj-ah)**2+(ak-ai)**2
+print("la distancia entre los puntos es",math.sqrt(al))
+
+#Ejercicio16
+am=int(input("ingrese la cantidad de segundos "))
+print("convertido en horas son",(am/60)/60)
+
+#Ejercicio17
+an=int(input("ingrese la cantidad de segundos "))
+print("convertido en minutos son",an/60)
+
+#Ejercicio18
+ao=int(input("ingrese la cantidad de segundos "))
+ap=(ao//60)//60
+aq=(ao//60)%60
+ar=ao%60
+print(str(ap)+":"+str(aq)+":"+str(ar))
+
+#Ejercicio19
+〒▽〒
+
+#Ejercicio20
+at=input("digite el número de 4 cifras ")
+at=at[::-1]
+print("el numero invertido es ",at)
+
+#Ejercicio21
+au=int(input("ingrese el número "))
+if au%2==0:
+    print("el número es par")
+else:
+    print("el número es impar")
+
+#Ejercicio22
+av=int(input("ingrese el número "))
+if av<0:
+    print("el número es negativo")
+else:
+    print("el número es positivo")
+    
+#Ejercicio23
+aw=int(input("ingrese el número "))
+if aw>0:
+    if aw%2==0:
+        print("el número es par positivo")
+    else:
+        print("el número es impar positivo")
+if aw<0:
+    if aw%2==0:
+        print("el número es par negativo")
+    else:
+        print("el número es impar negativo")
+        
+#Ejercicio24
+aw=float(input("ingrese el precio de la venta "))
+ax=aw*0.19
+if ax>150000:
+    print("se le hace un descuento del 5%, por lo tanto queda en",aw*0.95)
+else:
+    print("no se le hace descuento ")
+    
+#Ejercicio25
+ay=int(input("ingrese el número "))
+if ay >= 10:
+    print(ay*3)
+else:
+    print(ay*0.25)
+    
+#Ejercicio26
+az=float(input("ingrese la primera nota "))
+ba=float(input("ingrese la segunda nota "))
+bb=float(input("ingrese la tercera nota "))
+bc=float(input("ingrese la cuarta nota "))
+bd=float(input("ingrese la quinta nota "))
+az=az*0.15
+ba=ba*0.2
+bb=bb*0.15
+bc=bc*0.3
+bd=bd*0.2
+if az+ba+bb+bc+bd<2:
+    print("el estudiante no puede habilitar")
+if az+ba+bb+bc+bd<3 and az+ba+bb+bc+bd>2:
+    print("el estudiante reprobó")
+if az+ba+bb+bc+bd>4.5:
+    print("felicitaciones")
+else:
+    print("el estudiante aprobó")
+    
+#Ejercicio27
+be=int(input("ingrese el primer número "))
+bf=int(input("ingrese el segundo número "))
+if be>bf:
+    print("el número mayor es",be)
+if be==bf:
+    print("los números son iguales")
+if be<bf:
+    print("el número mayor es",bf)
+    
+#Ejercicio28
+bg=int(input("ingrese el número "))
+bg=1/bg
+print("convertido en decimal es:",bg)
+
+#Ejercicio29
+bh=int(input("ingrese el primer número "))
+bi=int(input("ingrese el segundo número "))
+bj=int(input("ingrese el tercer número "))
+if bh>bi:
+    if bh>bj:
+        print("el número mayor es",bh)
+    if bh<bj:
+        print("el número meyor es",bj)
+if bi>bj:
+    if bi>bh:
+        print("el número mayor es",bi)
+if bj>bh:
+    if bj>bh:
+        print("el número mayor es",bj)
+if bh<bi:
+    if bh<bj:
+        print("el número menor es",bh)
+    if bh<bj:
+        print("el número menor es",bj)
+if bi<bj:
+    if bi<bh:
+        print("el número menor es",bi)
+if bj<bh:
+    if bj<bh:
+        print("el número menor es",bj)
+        
+#Ejercicio30
+bk=int(input("ingrese el primer número "))
+bl=int(input("ingrese el segundo número "))
+bm=int(input("ingrese el tercer número "))
+if bk+bl>bm:
+    print("la suma del primer y segundo número es mayor que el tercero")
+if bk+bl==bm:
+    print("la suma del primer y segundo número es igual al tercero")
+if bk+bl<bm:
+    print("la suma del primer y segundo número es menor que el tercero")
+    
+#Ejercicio31
+bn=int(input("ingrese el número de km a recorrer "))
+bo=int(input("ingrese el número de dias de estancia "))
+if bn>1000:
+    if bo>7:
+        print("se le hace un descuento del 15%, el pasaje quedaria en",(bn*5000)*0.85)
+    if bo<=7:
+        print("el valor del pasaje es de",bn*5000)
+if bn>=20 and bn<1000:
+    print("el valor del pasaje es de",bn*5000)
+if bn<20:
+    print("el valor del pasaje es de 100000")
+    
+#Ejercicio32
+bp=int(input("ingrese el número del año "))
+if bp%4==0:
+    print("el año es bisiesto")
+else:
+    print("el año no es bisiesto")
+    
+#Ejercicio33
+X﹏X
+
+#Ejercicio34
+br="carlos"
+bs=1234
+bt=input("ingrese el usuario: ")
+bu=input("ingrese la contraseña: ")
+if bt==br and bu==bs:
+    print("usuario y contraseña correctos")
+else:
+    print("usuario o contraseña incorrectos")
+    
+#Ejercicio35
+bq=int(input("ingrese un número del 0 al 10 "))
+if bq>=0 and bq<=10:
+    if bq==0:
+        print("cero")
+    if bq==1:
+        print("uno")
+    if bq==2:
+        print("dos")
+    if bq==3:
+        print("tres")
+    if bq==4:
+        print("cuatro")
+    if bq==5:
+        print("cinco")
+    if bq==6:
+        print("seis")
+    if bq==7:
+        print("siete")
+    if bq==8:
+        print("ocho")
+    if bq==9:
+        print("nueve")
+    if bq==10:
+        print("diez")
+else:
+    print("número invalido")
+    
+#Ejercicio36
+bv=int(input("ingrese el número "))
+if bv<=100000:
+    bw=len(str(bv))
+    print("el cantidad de digitos es",bw)
+    
+#Ejercicio37
+bw = int(input("Ingrese un número menor a 100000 = "))
+bx = 0
+while bw != 0:
+    bw = bw // 10
+    bx += 1
+print("La cantidad de dígitos del número ingresado son = " + str(contador) + " " + "dígitos") 
+        
+#Ejercicio38
+by = input( "Ingrese los tres número = ").split()
+bz = int(by[0])
+ca = int(by[1])
+cb = int(by[2])
+if (bz > ca) and (ca > cb):
+    print("Está Disminuyendo.")
+else:
+    if (bz < ca) and (ca < cb):
+        print("Está incrementando.")
+    else:
+        print("No se incrementa ni se disminuye.")
+        
+#Ejercicio39
+cc = "true"
+while cc == "true":
+    cd = int(input("Ingrese el primer número = "))
+    ce = int(input("Ingrese el segundo número = "))
+    if (cd >= 0 and cd <= 5) and (ce >= 0 and ce <= 5):
+        print("Los números" + " " + str(cd) + " y " + str(ce) + " " + "sí están en el rango.")
+    else:
+        print("Los números" + " " +  str(cd) + " y " + str(ce) + " = False")
+
+#Ejercicio40
+cf = ['None','Lunes','Martes','Miércoles','Jueves','Viernes','Festivo','Festivo']
+cg = int(input("Ingrese el el número de la semana para conocer el nombre del día = "))
+print("El nombre del día número" + " " +str(cg) + " es = " + str(cf[cg]))
+
+#Ejercicio41
+ch = int(input("Ingrese el primer número = "))
+ci = int(input("Ingrese el segundo número = "))
+cj = int(input("Ingrese el tercer número = "))
+if (ch == ci) or (ch == cj) or (ci == ch) or (ci == cj):
+    print("Al menos 2 de los número ingresados son iguales.")
+else:
+    if (ch != ci) or (ch != cj) or (ci != ch) or (ci != cj):
+        print("No hay al menos 2 número iguales.")
+
+#Ejercicio42
+for ck in range(11):
+    print("Los primero números naturales son = ", ck)
+
+#Ejercicio43
+for cl in range(1,20):
+    if cl % 2 != 0:
+        print("Los primeros 10 número impares = ", cl)
+
+#Ejercicio44
+for cm in range(1,21):
+    if cm % 2 == 0:
+        print("Los primero 10 número pares son = ", cm)
+        
+#Ejercicio45
+cn = int(input("Ingrese un número = "))
+for co in range(cn):
+    print("Los primeros números naturales del número ingresado son = ", co)
+  
+#Ejercicio46
+≡(▔﹏▔)≡
+
+#Ejercicio47
+cp = int(input("Ingrese el primer número = "))
+cq = int(input("Ingrese el segundo número = "))
+if cq > cp:
+    for cr in range(cp,cq):
+        print("Los números naturales que hay entre los números ingresados son =" + " " +  str(cr))
+else:
+    print("El segundo número debe ser mayor que el primero porque es el límite.")
+    
+#Ejercicio48
+cs = 0
+ct = int(input("Ingrese el primer número = "))
+cu = int(input("Ingrese el segundo número = "))
+if cu > ct:
+    for i in range(ct,cu):
+        cs = cs + i
+    print("La suma de los números naturales que hay entre los dos números ingresados es = ", cs)
+else:
+    print("El segundo número debe ser mayor que el primero porque es el límite.")
+    
+#Ejercicio49
+cv = 1
+cw = 0
+while cv <= 10: #Ciclo
+    cx = int(input("Ingrese la nota" + " " + str(cv) + " = "))
+    if cv == 1:
+        cw += cx
+    if cv == 2:
+        cw += cx
+    if cv == 3:
+        cw += cx
+    if cv == 4:
+        cw += cx
+    if cv == 5:
+        cw += cx
+    if cv == 6:
+        cw += cx
+    if cv == 7:
+        cw += cx
+    if cv == 8:
+        cw += cx
+    if cv == 9:
+        cw += cx
+    if cv == 10:
+        cw += cx
+    cv += 1
+print("El promedio de las notas es =" + " " +str(cw/10))
+
+#Ejercicio50
+cy = 0
+cz = 0
+da = 0
+db = "true"
+while db == "true":
+    dc = float(input("Ingrese la nota = "))
+    if nota2 > 0:
+        cy = cy + dc
+        cz += 1
+    db = str(input("¿Quieres ingresar más notas? true o false = "))
+    if db == "false":
+        break
+print("El promedio de notas es = " + " "+ str(cy/cz))
+
+#Ejercicio51
+dd = 0
+de = 0
+df = 0
+dg = 0
+dh = 1
+di = "si"
+while di == "si":
+    dj = int(input("Ingrese un número # " + str(dh) + " = "))
+    di = str(input("¿Quieres ingresar más números? si o no = "))
+    if di == "si":
+        if dj % 2 == 0:
+            de = de + dj
+            dd += 1
+        else:
+            dg =  dg + dj
+            df += 1
+        dh += 1
+dk = de / dd
+dl = dg / df
+print("El promedio de los números pares es = " + " " + str(dk) + " y " + "el promedio de los números impares es = " + " " + str(dl))
+
+#Ejercicio52
+dm = "si"
+while dm == "si":
+    dn = int(input("Ingrese un número = "))
+    if dn > 0:
+        print("El número ingresado es = ", dn)
+        break
+    else:
+        print("No se pueden ingresar número negativos, vuélvalo a intentar")
